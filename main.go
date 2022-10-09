@@ -9,9 +9,9 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/yosssi/goat/config"
-	"github.com/yosssi/goat/consts"
-	"github.com/yosssi/goat/context"
+	"github.com/mauroalderete/goat/config"
+	"github.com/mauroalderete/goat/consts"
+	"github.com/mauroalderete/goat/context"
 )
 
 // main executes main processes.
@@ -42,7 +42,7 @@ func main() {
 	}
 
 	initTasks := ctx.Config.InitTasks
-	if initTasks != nil && len(initTasks) > 0 {
+	if len(initTasks) > 0 {
 		executeTasks(initTasks, nil)
 	}
 

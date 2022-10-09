@@ -17,7 +17,7 @@ You can use Goat to:
 ### From source codes
 
 ```sh
-$ go get github.com/yosssi/goat/...
+$ go get github.com/mauroalderete/goat/...
 ```
 
 ### By deploying a binary file

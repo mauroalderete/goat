@@ -7,7 +7,7 @@ import (
 
 func TestNewContext(t *testing.T) {
 	// When NewConfig returns an error.
-	wd := os.Getenv("GOPATH") + "/src/github.com/yosssi/goat/test/context/TestNewContext001"
+	wd := os.Getenv("GOPATH") + "/src/github.com/mauroalderete/goat/test/context/TestNewContext001"
 	os.Chdir(wd)
 	expectedErrMsg := "open goat.yml: no such file or directory"
 	_, err := NewContext(500)
@@ -16,7 +16,7 @@ func TestNewContext(t *testing.T) {
 	}
 
 	// When NewConfig returns a context.
-	wd = os.Getenv("GOPATH") + "/src/github.com/yosssi/goat/test/context/TestNewContext002"
+	wd = os.Getenv("GOPATH") + "/src/github.com/mauroalderete/goat/test/context/TestNewContext002"
 	os.Chdir(wd)
 	ctx, err := NewContext(500)
 	if err != nil {

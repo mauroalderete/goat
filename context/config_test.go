@@ -15,14 +15,14 @@ func TestNewConfig(t *testing.T) {
 
 	// When json.Unmarshal returns an error.
 	expectedErrMsg = "unexpected end of JSON input"
-	os.Chdir(os.Getenv("GOPATH") + "/src/github.com/yosssi/goat/test/context/TestNewConfig001")
+	os.Chdir(os.Getenv("GOPATH") + "/src/github.com/mauroalderete/goat/test/context/TestNewConfig001")
 	_, err = NewConfig()
 	if err == nil || err.Error() != expectedErrMsg {
 		t.Errorf("Error (%s) should be returned.", expectedErrMsg)
 	}
 
 	// When config from json is returned.
-	os.Chdir(os.Getenv("GOPATH") + "/src/github.com/yosssi/goat/test/context/TestNewConfig002")
+	os.Chdir(os.Getenv("GOPATH") + "/src/github.com/mauroalderete/goat/test/context/TestNewConfig002")
 	config, err := NewConfig()
 	if err != nil {
 		t.Errorf("Error (%s) occurred.", err.Error())
@@ -33,14 +33,14 @@ func TestNewConfig(t *testing.T) {
 
 	// When yaml.Unmarshal returns an error.
 	expectedErrMsg = "yaml: line 1: did not find expected node content"
-	os.Chdir(os.Getenv("GOPATH") + "/src/github.com/yosssi/goat/test/context/TestNewConfig003")
+	os.Chdir(os.Getenv("GOPATH") + "/src/github.com/mauroalderete/goat/test/context/TestNewConfig003")
 	_, err = NewConfig()
 	if err == nil || err.Error() != expectedErrMsg {
 		t.Errorf("Error (%s) should be returned.", expectedErrMsg)
 	}
 
 	// When config from yaml is returned.
-	os.Chdir(os.Getenv("GOPATH") + "/src/github.com/yosssi/goat/test/context/TestNewConfig004")
+	os.Chdir(os.Getenv("GOPATH") + "/src/github.com/mauroalderete/goat/test/context/TestNewConfig004")
 	config, err = NewConfig()
 	if err != nil {
 		t.Errorf("Error (%s) occurred.", err.Error())

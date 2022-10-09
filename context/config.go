@@ -6,7 +6,7 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/yosssi/goat/config"
+	"github.com/mauroalderete/goat/config"
 )
 
 // Config represents a configuration of a process.

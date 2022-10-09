@@ -42,7 +42,7 @@ func main() {
 	}
 
 	initTasks := ctx.Config.InitTasks
-	if initTasks != nil && len(initTasks) > 0 {
+	if len(initTasks) > 0 {
 		executeTasks(initTasks, nil)
 	}
 
